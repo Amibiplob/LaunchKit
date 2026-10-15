@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LaunchKit — Next.js SaaS Landing Page Template
 
-## Getting Started
+Responsive, customizable SaaS landing page with light/dark theme, a CSS dashboard mockup, feature cards, pricing, accordion FAQ, and a contact CTA.
 
-First, run the development server:
+## Stack
+- Next.js 16 App Router
+- React 19 + TypeScript
+- Tailwind CSS 4 (configured; additional custom styles in `app/globals.css`)
+- Lucide React icons
 
+## Requirements
+Node.js 20.9+ (Node 22 LTS recommended) and pnpm 10+. Internet access is required for the first dependency install.
+
+## Install and run
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+corepack enable
+pnpm install
 pnpm dev
-# or
-bun dev
+```
+Visit http://localhost:3000.
+
+## Validate before deployment
+```bash
+pnpm typecheck
+pnpm lint
+pnpm build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Customize before using/selling
+1. Edit brand name, URL, email, nav links, features, pricing, and FAQs in `lib/site.ts`.
+2. Replace demo plan `mailto:` links with real checkout URLs if needed. The template does NOT process payments.
+3. Customize colors and typography in `app/globals.css`.
+4. Replace the mock dashboard in `components/dashboard-preview.tsx` with screenshots or your own interface.
+5. Review `app/layout.tsx` metadata.
+6. Review and tailor `LICENSE.txt` before selling; remove this checklist or adapt for customers.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Theme
+The theme switcher is a client component using `localStorage` (key: `launchkit-theme`). Users without JavaScript get the default stylesheet theme; the toggle needs JavaScript.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
+Push to your own repository and import into Vercel, or use any hosting service supporting Next.js. No environment variables are needed. The sample pricing buttons only open email drafts.
 
-## Learn More
+## Included sections
+Header, hero, illustrative dashboard, features, product showcase, pricing, FAQ, CTA, footer.
 
-To learn more about Next.js, take a look at the following resources:
+## Limitations
+This is a frontend marketing template. It intentionally does not include authentication, payment processing, analytics, a database, server APIs, or real dashboard data. Demo figures are fictional.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+See `LICENSE.txt`. Before distributing as a seller, replace the sample copyright information and validate the license for your business.

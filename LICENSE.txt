@@ -1,0 +1,10 @@
+LaunchKit - Single Product License (Sample)
+Copyright (c) 2026 LaunchKit author.
+
+The purchaser may use and modify the source code in one personal or commercial end product. The purchaser may deploy that end product for its own users.
+
+The purchaser may not resell, redistribute, sublicense, share, or repackage the original source code or derivative templates as a standalone template, component library, or competing product.
+
+Provided AS IS, without warranties of any kind. To the maximum extent permitted by applicable law, the author is not liable for damages arising from use.
+
+IMPORTANT FOR SELLERS: Replace the author/copyright information and review this sample license before selling. This is not legal advice.
